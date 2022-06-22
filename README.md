@@ -4,6 +4,8 @@
 - [axios](https://www.npmjs.com/package/axios)
 - [@heroicons/react](https://heroicons.com/)
 
+[![](https://visitcount.itsvg.in/api?id=freyhacks&label=Repo%20Views&color=0&icon=5&pretty=true)](https://visitcount.itsvg.in)
+
 <details> <summary>NextJS Guide </summary>
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
