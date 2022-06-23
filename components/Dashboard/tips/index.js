@@ -12,8 +12,11 @@ export default function Tips() {
   }, []);
 
   return (
-    <div className="cursive uppercase flex justify-center max-w-full text-xl text-center mt-6">
-      <TextTransition springConfig={presets.molasses}>
+    <div className="cursive uppercase flex justify-center max-w-full text-xl text-center mt-6 opacity-75">
+      <TextTransition
+        springConfig={presets.default}
+        className="transition-all ease-in-out"
+      >
         {tipsList[index]}
       </TextTransition>
     </div>
