@@ -24,7 +24,7 @@ export default function Home() {
           <title>SummerX</title>
         )}
         <meta name="description" content="SummerX Website" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.png" />
       </Head>
       <main className="p-6 text-primary dark:text-secondary transition-all ease-in-out">
         {isContentVisible ? (
