@@ -6,7 +6,8 @@
 
 body {
   background-color: #fefb7d;
-  font-family: "Ubuntu", sans-serif;
+  /* TODO: Check for font weight availabilitya and then apply */
+  /* font-family: "Ubuntu", sans-serif; */
 }
 .dark body {
   background-color: #090b1d;
