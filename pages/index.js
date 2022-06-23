@@ -7,7 +7,7 @@ export default function Home() {
   const [isContentVisible, setIsContentVisible] = useState(false);
   // checking if first time user, by checking availability of stored username
   useEffect(() => {
-    if (localStorage.getItem("username")) {
+    if (localStorage.getItem("summerx_username")) {
       setIsContentVisible(true);
     } else {
       router.push("/home");
@@ -22,9 +22,9 @@ export default function Home() {
       </Head>
       <main className="">
         {isContentVisible ? (
+          <p className="text-primary text-center text-3xl">Hello India!</p>
+          ) : (
           <></>
-        ) : (
-          <p className="text-cyan-600 text-center text-3xl">Hello India!</p>
         )}
       </main>
     </>
