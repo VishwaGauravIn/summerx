@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function Tips() {
-  return (
-    <div>Tips</div>
-  )
+  return <div>Tips</div>;
 }

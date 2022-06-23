@@ -30,7 +30,7 @@ export default function Home() {
         {isContentVisible ? (
           <>
             <Header />
-            <Dashboard/>
+            <Dashboard />
           </>
         ) : (
           <></>

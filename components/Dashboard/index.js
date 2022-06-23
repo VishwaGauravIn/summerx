@@ -14,8 +14,18 @@ export default function Dashboard() {
           <Widgets />
         </div>
         <div className="flex justify-center items-center w-5/12">
-          <img src="/pic3.svg" alt="" className="w-full dark:hidden" />
-          <img src="/pic3_dark.svg" alt="" className="w-full hidden dark:block" />
+          <img
+            src="/pic3.svg"
+            alt=""
+            className="w-full dark:hidden select-none pointer-events-none"
+            draggable={false}
+          />
+          <img
+            src="/pic3_dark.svg"
+            alt=""
+            className="w-full hidden dark:block select-none pointer-events-none"
+            draggable={false}
+          />
         </div>
       </div>
       <div className="">
