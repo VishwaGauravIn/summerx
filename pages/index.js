@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import Header from "../components/Header";
+import Dashboard from "../components/Dashboard";
 
 export default function Home() {
   const router = useRouter();
@@ -29,6 +30,7 @@ export default function Home() {
         {isContentVisible ? (
           <>
             <Header />
+            <Dashboard/>
           </>
         ) : (
           <></>
