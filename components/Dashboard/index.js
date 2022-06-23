@@ -3,7 +3,7 @@ import Greeting from './greetings/Greeting'
 
 export default function Dashboard() {
   return (
-    <div>
+    <div className='md:p-16'>
         <Greeting/>
     </div>
   )
