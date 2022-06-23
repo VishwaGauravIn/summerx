@@ -22,20 +22,20 @@ export default function Header() {
     }
   }
   return (
-      <div className="flex flex-row flex-wrap relative items-center">
-        <p className="text-3xl font-semibold first-letter:border-dashed">
-          SummerX
-        </p>
-        <button
-          className="absolute right-0 active:scale-75 transition-transform ease-in-out"
-          onClick={changeTheme}
-        >
-          {isDarkMode ? (
-            <SunIcon className="w-7 stroke-[1.5] mr-0.5" />
-          ) : (
-            <MoonIcon className="w-7 stroke-[1.5]" />
-          )}
-        </button>
-      </div>
+    <div className="flex flex-row flex-wrap relative items-center">
+      <p className="text-3xl font-semibold first-letter:border-dashed">
+        SummerX
+      </p>
+      <button
+        className="absolute right-0 active:scale-75 transition-transform ease-in-out"
+        onClick={changeTheme}
+      >
+        {isDarkMode ? (
+          <SunIcon className="w-7 stroke-[1.5] mr-0.5" />
+        ) : (
+          <MoonIcon className="w-7 stroke-[1.5]" />
+        )}
+      </button>
+    </div>
   );
 }

@@ -1,14 +1,13 @@
 import React from "react";
-import Features from "../Header/features";
-import GlobalStats from "../Header/globalStats";
-import Hero from "../Header/hero";
-
+import Hero from "./hero";
+import Features from "./features";
+import GlobalStats from "./globalStats";
 export default function HomeComponents() {
   return (
-    <div>
+    <>
       <Hero />
       <GlobalStats />
       <Features />
-    </div>
+    </>
   );
 }
