@@ -10,7 +10,7 @@ export default function Home() {
         <meta name="description" content="SummerX Website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="p-6 text-primary dark:text-secondary transition-all ease-in-out">
+      <main className="p-6 text-primary-default dark:text-secondary-default transition-all ease-in-out">
         <Header />
       </main>
     </>
