@@ -27,7 +27,7 @@ export default function Header() {
           SummerX
         </p>
         <button
-          className="absolute right-0 active:scale-75 transition-transform ease-in-out"
+          className="absolute right-0 active:scale-75 transition-transform ease-in-out outline-none"
           onClick={changeTheme}
         >
           {isDarkMode ? (
