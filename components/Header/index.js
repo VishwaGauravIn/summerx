@@ -1,16 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { MoonIcon, SunIcon } from "@heroicons/react/outline";
 
 export default function Header() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   //   TODO: Store it in localstorage
+  useEffect(() => {
+    if (localStorage.getItem("summerx_darklover") === "true") {
+      setIsDarkMode(true);
+      document.documentElement.classList.add("dark");
+    }
+  }, []);
   function changeTheme() {
     if (isDarkMode) {
       setIsDarkMode(false);
-      document.documentElement.classList.add("dark");
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("summerx_darklover", false);
     } else {
       setIsDarkMode(true);
-      document.documentElement.classList.remove("dark");
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("summerx_darklover", true);
     }
   }
   return (
