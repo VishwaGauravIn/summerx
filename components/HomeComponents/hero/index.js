@@ -21,6 +21,7 @@ export default function Hero() {
       }
     } else alert("Invalid Username");
   }
+  // Get Location Permission
   function checkLocationPermission() {
     if (localStorage.getItem("summerx_locationPermission") === "true") {
       router.push("/");
@@ -52,7 +53,11 @@ export default function Hero() {
               texts={["Summer", "Excssive Heat", "Dehydration", "Illness"]}
             />
           </div> */}
-          <p className="mb-6 sm:w-11/12 md:w-10/12 xl:text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum porro non obcaecati ducimus voluptas odit eveniet eos perferendis rerum excepturi.</p>
+          <p className="mb-6 sm:w-11/12 md:w-10/12 xl:text-xl">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum porro
+            non obcaecati ducimus voluptas odit eveniet eos perferendis rerum
+            excepturi.
+          </p>
           <form action="" onSubmit={checkUsername} className="flex flex-col">
             <input
               type="text"
@@ -71,7 +76,6 @@ export default function Hero() {
               Get Started
             </button>
           </form>
-          {/* TODO: Buttons Design */}
         </div>
       </div>
       <div className="basis-5/12 text-center p-4 w-[80%] lg:w-[90%] mt-0 mx-auto animate-bouncy ">
