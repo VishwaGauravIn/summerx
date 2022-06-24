@@ -45,7 +45,13 @@ export default function Widgets() {
     <div className="w-full flex flex-row flex-wrap pt-16 sm:px-4 justify-center">
       <Widget icon={Bell} label="Alerts" onClick={showAlerts} />
       <Widget icon={Water} label="Water Reminder" />
-      <Widget icon={Tree} label="Plant a Tree" />
+      <Widget
+        icon={Tree}
+        label="Plant a Tree"
+        onClick={() => {
+          window.open("https://teamtrees.org/", "_blank");
+        }}
+      />
       <Widget icon={Music} label="Music" />
       <Widget icon={Hotels} label="Hotels" onClick={() => find("Hotels")} />
       <Widget
