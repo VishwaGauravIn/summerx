@@ -1,6 +1,5 @@
 import React from "react";
 import { AnimateText } from "../../elements/AnimatedText";
-import { Summer_hero } from "../../elements/SVGs";
 
 export default function Hero() {
   return (
@@ -40,8 +39,9 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="basis-1/3 text-center">
-        <Summer_hero className="p-4 w-[80%] lg:w-[90%] mt-0 mx-auto animate-bouncy" />
+      <div className="basis-1/3 text-center p-4 w-[80%] lg:w-[90%] mt-0 mx-auto animate-bouncy ">
+        <img src="/hero.svg" alt="" className="hidden dark:block" />
+        <img src="/hero_dark.svg" alt="" className="block dark:hidden" />
       </div>
     </div>
   );
