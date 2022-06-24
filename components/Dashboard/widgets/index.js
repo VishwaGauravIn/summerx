@@ -4,31 +4,14 @@ import {
   MusicNoteIcon,
   FireIcon,
   BellIcon,
-  ShoppingCartIcon,
   SparklesIcon,
 } from "@heroicons/react/solid";
 import Widget from "./Widget";
 
 export default function Widgets() {
-  function doctor() {
+  function find(x) {
     window.open(
-      `https://www.google.com/maps/search/Hospitals/@${localStorage.getItem(
-        "summerx_lat"
-      )},${localStorage.getItem("summerx_long")}`,
-      "_blank"
-    );
-  }
-  function attractions() {
-    window.open(
-      `https://www.google.com/maps/search/Attractions/@${localStorage.getItem(
-        "summerx_lat"
-      )},${localStorage.getItem("summerx_long")}`,
-      "_blank"
-    );
-  }
-  function restaurants() {
-    window.open(
-      `https://www.google.com/maps/search/Restaurants/@${localStorage.getItem(
+      `https://www.google.com/maps/search/${x}/@${localStorage.getItem(
         "summerx_lat"
       )},${localStorage.getItem("summerx_long")}`,
       "_blank"
@@ -38,12 +21,24 @@ export default function Widgets() {
     <div className="w-full flex flex-row flex-wrap pt-16 sm:px-4 justify-center">
       <Widget icon={Music} label="Music" />
       <Widget icon={Fire} label="Heat Waves" />
-      <Widget icon={Info} label="Info" />
       <Widget icon={Water} label="Water Reminder" />
       <Widget icon={Bell} label="Alerts" />
-      <Widget icon={Doctor} label="Hospitals" onClick={doctor} />
-      <Widget icon={Sparkles} label="Attractions" onClick={attractions} />
-      <Widget icon={Restaurants} label="Restaurants" onClick={restaurants} />
+      <Widget icon={Hotels} label="Hotels" onClick={() => find("Hotels")} />
+      <Widget
+        icon={Doctor}
+        label="Hospitals"
+        onClick={() => find("Hospitals")}
+      />
+      <Widget
+        icon={Sparkles}
+        label="Attractions"
+        onClick={() => find("Attractions")}
+      />
+      <Widget
+        icon={Restaurants}
+        label="Restaurants"
+        onClick={() => find("Restaurants")}
+      />
     </div>
   );
 }
@@ -80,7 +75,6 @@ const Doctor = (
     <path d="M6 0a1 1 0 0 0-1 1v1a1 1 0 0 0-1 1v4H1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h6v-2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V16h6a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-3V3a1 1 0 0 0-1-1V1a1 1 0 0 0-1-1H6Zm2.5 5.034v1.1l.953-.55.5.867L9 7l.953.55-.5.866-.953-.55v1.1h-1v-1.1l-.953.55-.5-.866L7 7l-.953-.55.5-.866.953.55v-1.1h1ZM2.25 9h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 2 9.75v-.5A.25.25 0 0 1 2.25 9Zm0 2h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5a.25.25 0 0 1 .25-.25ZM2 13.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5ZM13.25 9h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5a.25.25 0 0 1 .25-.25ZM13 11.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5Zm.25 1.75h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5a.25.25 0 0 1 .25-.25Z" />
   </svg>
 );
-const Shop = <ShoppingCartIcon className={iconClass} />;
 const Sparkles = <SparklesIcon className={iconClass} />;
 const Restaurants = (
   <svg
@@ -92,5 +86,18 @@ const Restaurants = (
     <path d="M384,352H184.36l-41,35-41-35H16v24c0,30.59,21.13,55.51,47.26,56,2.43,15.12,8.31,28.78,17.16,39.47C93.51,487.28,112.54,496,134,496H266c21.46,0,40.49-8.72,53.58-24.55,8.85-10.69,14.73-24.35,17.16-39.47,13.88-.25,26.35-7.4,35-18.63A61.26,61.26,0,0,0,384,376Z" />
     <path d="M105,320h0l38.33,28.19L182,320H384v-8a40.07,40.07,0,0,0-32-39.2c-.82-29.69-13-54.54-35.51-72C295.67,184.56,267.85,176,236,176H164c-68.22,0-114.43,38.77-116,96.8A40.07,40.07,0,0,0,16,312v8h89Z" />
     <path d="M463.08,96H388.49l8.92-35.66L442,45,432,16,370,36,355.51,96H208v32h18.75l1.86,16H236c39,0,73.66,10.9,100.12,31.52A121.9,121.9,0,0,1,371,218.07a124.16,124.16,0,0,1,10.73,32.65,72,72,0,0,1,27.89,90.9A96,96,0,0,1,416,376c0,22.34-7.6,43.63-21.4,59.95a80,80,0,0,1-31.83,22.95,109.21,109.21,0,0,1-18.53,33c-1.18,1.42-2.39,2.81-3.63,4.15H416c16,0,23-8,25-23l36.4-345H496V96Z" />
+  </svg>
+);
+const Hotels = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    className={iconClass}
+    fill="currentColor"
+  >
+    <g>
+      <path fill="none" d="M0 0h24v24H0z" />
+      <path d="M22 11v9h-2v-3H4v3H2V4h2v10h8V7h6a4 4 0 0 1 4 4zM8 13a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+    </g>
   </svg>
 );
