@@ -5,7 +5,6 @@ export default function Greeting() {
   const hours = date.getHours();
   const [greetingPrefix, setGreetingPrefix] = useState("");
   const [firstname, setFirstname] = useState("");
-  console.log(hours);
   useEffect(() => {
     setFirstname(localStorage.getItem("summerx_username").split(" ")[0]);
     if (hours > 11 && hours < 16) {
