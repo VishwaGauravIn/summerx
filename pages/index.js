@@ -9,11 +9,11 @@ export default function Home() {
   const [isContentVisible, setIsContentVisible] = useState(false);
   // checking if first time user, by checking availability of stored username
   useEffect(() => {
-    // if (localStorage.getItem("summerx_username")) {
+    if (localStorage.getItem("summerx_username")) {
       setIsContentVisible(true);
-    // } else {
-      // router.push("/home");
-    // }
+    } else {
+      router.push("/home");
+    }
   });
   return (
     <>
