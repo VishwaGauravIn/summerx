@@ -7,6 +7,7 @@ export default function Temperature() {
   const [humidity, setHumidity] = useState(0);
   const [tmax, setTmax] = useState(0);
   const [tmin, setTmin] = useState(0);
+  const [wcode, setWcode] = useState(0);
   useEffect(() => {
     // Checking if geolocation is available
     if ("geolocation" in navigator) {
@@ -27,6 +28,7 @@ export default function Temperature() {
             setHumidity(parseInt(base.humidity));
             setTmax(parseInt(base.temp_max));
             setTmin(parseInt(base.temp_min));
+            setWcode(parseInt(res.data.list[0].weather[0].icon));
           });
       });
     } else {
@@ -34,8 +36,21 @@ export default function Temperature() {
     }
   }, []);
   return (
-    <div className="w-10/12 mt-4 h-28 ring-8 ring-primary/20 dark:ring-secondary/20 bg-primary dark:bg-secondary rounded-xl dark:text-primary text-secondary p-8 flex items-center">
+    <div className="w-10/12 mt-4 h-28 ring-8 ring-primary/20 dark:ring-secondary/20 bg-primary dark:bg-secondary rounded-xl dark:text-primary text-secondary p-8 flex items-center relative">
       <p className="text-6xl font-semibold">{temp}°C</p>
+      {/* Weather icon */}
+      <div className="absolute right-4">
+        <img
+          src={`https://openweathermap.org/img/wn/${wcode}d@4x.png`}
+          alt=""
+          className="w-28 dark:hidden"
+        />
+        <img
+          src={`https://openweathermap.org/img/wn/${wcode}n@4x.png`}
+          alt=""
+          className="w-28 hidden dark:block"
+        />
+      </div>
     </div>
   );
 }
