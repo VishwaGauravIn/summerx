@@ -6,14 +6,14 @@ import Widgets from "./widgets";
 
 export default function Dashboard() {
   return (
-    <div className="md:p-16 w-full">
+    <div className="md:p-16 w-full relative">
       <Greeting />
-      <div className="flex flex-row flex-wrap w-full">
-        <div className="flex flex-col flex-wrap p-4 items-center w-7/12">
+      <div className="flex flex-col lg:flex-row  w-full">
+        <div className="flex flex-col flex-wrap py-4 sm:p-4 items-center w-full lg:w-7/12">
           <Temperature />
           <Widgets />
         </div>
-        <div className="flex justify-center items-center w-5/12">
+        <div className="flex flex-wrap justify-center items-center md:8/12 lg:w-5/12">
           <img
             src="/pic3.svg"
             alt=""
