@@ -5,7 +5,7 @@ export default function GlobalStats() {
   return (
     <>
       <div className="text-center text-xl lg:text-3xl xl:text-4xl my-12 lg:my-24 xl:my-36">
-        What\'s happening around globe due to Summer (per year)
+        What&apos;s happening around globe due to Summer (per year)
         <div className="flex flex-col md:flex-row justify-center items-center md:items-stretch gap-4 md:gap-6 lg:gap-8 xl:gap-12 w-[90%] mt-8 mx-auto flex-wrap  lg:mt-20">
           <Box>
             <Person_Left className="w-[70%] mt-0 mx-auto" />
