@@ -59,7 +59,10 @@ export default function Widgets() {
         icon={Music}
         label="Music"
         onClick={() => {
-          alert("Music feature is under testing");
+          if (!localStorage.getItem("summerx_music_alert")) {
+            alert("Music feature is under testing");
+            localStorage.setItem("summerx_music_alert", "shown");
+          }
           window.open(
             `https://open.spotify.com/search/${mood} mood/playlists`,
             "_blank"
