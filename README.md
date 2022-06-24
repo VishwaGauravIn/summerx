@@ -1,3 +1,12 @@
+## 🚧 Under Development
+----
+## Screenshots
+![image](https://user-images.githubusercontent.com/81325730/175696177-a2f4505d-da00-46b8-a666-b01bbbbe81b9.png)
+![image](https://user-images.githubusercontent.com/81325730/175696207-ef284509-d383-4c2a-89f2-6f8a3540150a.png)
+![image](https://user-images.githubusercontent.com/81325730/175696240-a3ac9a98-5e91-43c4-be3a-40505e985ada.png)
+![image](https://user-images.githubusercontent.com/81325730/175696273-39089554-2271-42a5-ba52-29f2c2de8c23.png)
+
+
 ## Libraries being used
 - [gsap](https://greensock.com/gsap/)
 - [framer-motion](https://greensock.com/gsap/)
