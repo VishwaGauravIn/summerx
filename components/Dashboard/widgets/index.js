@@ -7,6 +7,7 @@ import AlertBox from "../../alert/AlertBox";
 export default function Widgets() {
   const [walert, setWAlert] = useState([]);
   const [isWAlertVisible, setIsWAlertVisible] = useState(false);
+  const [mood, setMood] = useState("pop");
   function find(x) {
     window.open(
       `https://www.google.com/maps/search/${x}/@${localStorage.getItem(
@@ -27,6 +28,8 @@ export default function Widgets() {
         }`
       )
       .then((r) => {
+        console.log(r);
+        setMood(r.data.current.weather[0].main);
         if (r.data.alerts) {
           setWAlert(r.data.alerts[0]);
         } else {
@@ -52,7 +55,17 @@ export default function Widgets() {
           window.open("https://teamtrees.org/", "_blank");
         }}
       />
-      <Widget icon={Music} label="Music" />
+      <Widget
+        icon={Music}
+        label="Music"
+        onClick={() => {
+          alert("Music feature is under testing");
+          window.open(
+            `https://open.spotify.com/search/${mood} mood/playlists`,
+            "_blank"
+          );
+        }}
+      />
       <Widget icon={Hotels} label="Hotels" onClick={() => find("Hotels")} />
       <Widget
         icon={Doctor}
