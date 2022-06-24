@@ -69,13 +69,29 @@ export default function Home() {
           content="https://summerx.vercel.app/webimg.png"
         />
         <link rel="icon" href="/logo.png" />
+        {/* Google Analytics */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-BMEHXZ1PSM"
+        />
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-BMEHXZ1PSM', { page_path: window.location.pathname });
+            `,
+          }}
+        />
       </Head>
       <main className="p-4 sm:p-6 text-primary dark:text-secondary transition-all ease-in-out">
         {isContentVisible ? (
           <>
             <Header />
             <Dashboard />
-            <Footer/>
+            <Footer />
           </>
         ) : (
           <></>
