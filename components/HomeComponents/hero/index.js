@@ -9,7 +9,7 @@ export default function Hero() {
         <div>
           <div className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-medium text-primary-400 dark:text-secondary-600">
             We are on a Mission
-          </div>{" "}
+          </div>
           <br />
           <div className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold capitalize">
             To Save lives
