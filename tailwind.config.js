@@ -36,7 +36,7 @@ module.exports = {
       keyframes: {
         bouncy: {
           "0%, 100%": { transform: "translateY(0rem)" },
-          "50%": { transform: "translateY(1rem)" },
+          "50%": { transform: "translateY(0.5rem)" },
         },
       },
       animation: {
