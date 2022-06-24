@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'class',
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -33,7 +33,16 @@ module.exports = {
           '900': '#333219',
         },
       },
+      keyframes: {
+        bouncy: {
+          "0%, 100%": { transform: "translateY(0rem)" },
+          "50%": { transform: "translateY(1rem)" },
+        },
+      },
+      animation: {
+        bouncy: "bouncy 2s ease-in-out infinite",
+      },
     },
   },
   plugins: [],
-}
+};
