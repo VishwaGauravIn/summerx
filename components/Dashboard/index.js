@@ -6,7 +6,7 @@ import Widgets from "./widgets";
 
 export default function Dashboard() {
   return (
-    <div className="py-10 sm:px-8 md:p-10 xl:p-16 w-full relative">
+    <div className="py-10 sm:px-8 md:py-10 md:px-2 xl:p-16 w-full relative">
       <Greeting />
       <div className="flex flex-col lg:flex-row  w-full">
         <div className="flex flex-col flex-wrap py-4 sm:p-4 items-center w-full lg:w-7/12">
