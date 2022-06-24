@@ -1,7 +1,37 @@
-import React from "react";
-import { AnimateText } from "../../elements/AnimatedText";
+import React, { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
 export default function Hero() {
+  const [username, setUsername] = useState("");
+  const router = useRouter();
+  useEffect(() => {
+    if (localStorage.getItem("summerx_username")) {
+      setUsername(localStorage.getItem("summerx_username"));
+    }
+  }, []);
+  // Check Username
+  function checkUsername(e) {
+    e.preventDefault();
+    if (username.length !== 0) {
+      if (username.replace(/ /g, "") !== 0) {
+        localStorage.setItem("summerx_username", username);
+        checkLocationPermission();
+      } else {
+        alert("Invalid Username");
+      }
+    } else alert("Invalid Username");
+  }
+  function checkLocationPermission() {
+    if (localStorage.getItem("summerx_locationPermission") === "true") {
+      router.push("/");
+    } else {
+      alert("We need Location Permission to work, Please allow us");
+      navigator.geolocation.getCurrentPosition(() => {
+        localStorage.setItem("summerx_locationPermission", true);
+        router.push("/");
+      });
+    }
+  }
   return (
     <div className="flex flex-col md:flex-row mt-8 lg:mt-12 xl:mt-24 justify-center dark:text-zinc-200 text-primary">
       <div className="basis-6/12 flex flex-col gap-4 lg:gap-3 xl:gap-8 sm:pl-3 lg:pl-6 py-8 sm:py-10 md:py-12">
@@ -22,6 +52,25 @@ export default function Hero() {
               texts={["Summer", "Excssive Heat", "Dehydration", "Illness"]}
             />
           </div> */}
+          <p className="mb-6 sm:w-11/12 md:w-10/12 xl:text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum porro non obcaecati ducimus voluptas odit eveniet eos perferendis rerum excepturi.</p>
+          <form action="" onSubmit={checkUsername} className="flex flex-col">
+            <input
+              type="text"
+              id=""
+              required={true}
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              placeholder="Your full name"
+              autoFocus={true}
+              className="w-full sm:w-10/12 h-16 lg:h-20 rounded-lg bg-primary dark:bg-secondary ring-8 ring-primary/20 dark:ring-secondary/20 text-secondary dark:text-primary outline-none p-4 text-xl md:text-2xl lg:text-3xl font-semibold tracking-wider"
+            />
+            <button
+              className="bg-primary dark:bg-secondary hover:ring-primary/30 ring-8 ring-primary/20 dark:ring-secondary/20 text-secondary dark:text-primary outline-none p-4 text-base md:text-xl lg:text-2xl w-max px-8 my-8 rounded-full transition-all ease-in-out active:scale-95 self-center sm:self-start"
+              type="submit"
+            >
+              Get Started
+            </button>
+          </form>
           {/* TODO: Buttons Design */}
         </div>
       </div>

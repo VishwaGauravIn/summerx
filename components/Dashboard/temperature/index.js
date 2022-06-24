@@ -18,6 +18,7 @@ export default function Temperature() {
         let long = position.coords.longitude;
         localStorage.setItem("summerx_lat", lat);
         localStorage.setItem("summerx_long", long);
+        localStorage.setItem("summerx_locationPermission", true);
         // after getting coordinates, we will use API to get weather info
         axios
           .get(
