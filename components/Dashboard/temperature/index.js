@@ -16,6 +16,8 @@ export default function Temperature() {
       navigator.geolocation.getCurrentPosition(function (position) {
         let lat = position.coords.latitude;
         let long = position.coords.longitude;
+        localStorage.setItem("summerx_lat", lat);
+        localStorage.setItem("summerx_long", long);
         // after getting coordinates, we will use API to get weather info
         axios
           .get(
@@ -41,28 +43,37 @@ export default function Temperature() {
   return (
     <div className="w-full sm:w-11/12 mt-4 h-28 ring-8 ring-primary/20 dark:ring-secondary/20 bg-primary dark:bg-secondary rounded-xl dark:text-primary text-secondary p-4 sm:p-8 flex items-center relative justify-between">
       {/* Stats */}
-        <p className="text-4xl sm:text-5xl md:text-5xl lg:text-4xl xl:text-6xl font-semibold">{temp}°C</p>
-        <p className="ml-3 sm:ml-4 sm:mr-2 text-xs sm:text-xl md:text-xl lg:text-base xl:text-xl opacity-70">Feels Like {feelLike}°C</p>
-        {/* Min and Max Temp for the day */}
-        <div className="flex flex-col space-y-2">
-          <p
-            className="flex justify-center items-center font-semibold text-sm sm:text-xl md:text-xl lg:text-base xl:text-xl"
-            title="Minimum Temperature"
-          >
-            <TrendingUpIcon className="w-5 sm:w-7 xl:w-8 mr-2 stroke-[1.6]" /> {tmax}°C
-          </p>
-          <p
-            className="flex justify-center items-center font-semibold text-sm sm:text-xl md:text-xl lg:text-base xl:text-xl"
-            title="Maximum Temperature"
-          >
-            <TrendingDownIcon className="w-5 sm:w-7 xl:w-8 mr-2 stroke-[1.6]" /> {tmin}°C
-          </p>
-        </div>
-        {/* Humidity level */}
-        <p className="flex text-sm sm:text-xl md:text-xl lg:text-base xl:text-xl font-semibold" title="Humidity">
-          {MOISTURE_SVG}
-          {humidity}
+      <p className="text-4xl sm:text-5xl md:text-5xl lg:text-4xl xl:text-6xl font-semibold">
+        {temp}°C
+      </p>
+      <p className="ml-3 sm:ml-4 sm:mr-2 text-xs sm:text-xl md:text-xl lg:text-base xl:text-xl opacity-70">
+        Feels Like {feelLike}°C
+      </p>
+      {/* Min and Max Temp for the day */}
+      <div className="flex flex-col space-y-2">
+        <p
+          className="flex justify-center items-center font-semibold text-sm sm:text-xl md:text-xl lg:text-base xl:text-xl"
+          title="Minimum Temperature"
+        >
+          <TrendingUpIcon className="w-5 sm:w-7 xl:w-8 mr-2 stroke-[1.6]" />{" "}
+          {tmax}°C
         </p>
+        <p
+          className="flex justify-center items-center font-semibold text-sm sm:text-xl md:text-xl lg:text-base xl:text-xl"
+          title="Maximum Temperature"
+        >
+          <TrendingDownIcon className="w-5 sm:w-7 xl:w-8 mr-2 stroke-[1.6]" />{" "}
+          {tmin}°C
+        </p>
+      </div>
+      {/* Humidity level */}
+      <p
+        className="flex text-sm sm:text-xl md:text-xl lg:text-base xl:text-xl font-semibold"
+        title="Humidity"
+      >
+        {MOISTURE_SVG}
+        {humidity}
+      </p>
       {/* Weather icon */}
       <div className="scale-125 sm:scale-100">
         <img

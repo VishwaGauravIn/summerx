@@ -4,6 +4,7 @@ import TextTransition, { presets } from "react-text-transition";
 
 export default function Tips() {
   const [index, setIndex] = useState(0);
+  // Finding a random number from 0 to 21
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex(Math.floor(Math.random() * 22));
