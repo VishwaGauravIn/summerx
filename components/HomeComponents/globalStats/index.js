@@ -1,11 +1,16 @@
 import React from "react";
-import { ChartBarIcon, TrendingDownIcon, UserGroupIcon, UserRemoveIcon } from '@heroicons/react/solid'
+import {
+  ChartBarIcon,
+  TrendingDownIcon,
+  UserGroupIcon,
+  UserRemoveIcon,
+} from "@heroicons/react/solid";
 
 export default function GlobalStats() {
   return (
     <>
       <div className="text-center text-xl lg:text-3xl xl:text-4xl mt-16 font-semibold">
-        What&apos;s happening around globe due to Summer (per year)
+        What&apos;s happening around the globe due to Summer
         <div className="flex flex-col md:flex-row justify-center items-center md:items-stretch w-[90%] mt-8 mx-auto flex-wrap  lg:mt-10">
           <Box>
             <UserRemoveIcon className="w-[70%] mx-auto stroke-[1.6]" />
