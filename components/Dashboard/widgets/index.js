@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { MusicNoteIcon, BellIcon, SparklesIcon } from "@heroicons/react/solid";
 import Widget from "./Widget";
+import axios from "axios";
+import AlertBox from "../../alert/AlertBox";
 
 export default function Widgets() {
+  const [walert, setWAlert] = useState([]);
+  const [isWAlertVisible, setIsWAlertVisible] = useState(false);
   function find(x) {
     window.open(
       `https://www.google.com/maps/search/${x}/@${localStorage.getItem(
@@ -11,9 +15,35 @@ export default function Widgets() {
       "_blank"
     );
   }
+  useEffect(() => {
+    axios
+      .get(
+        `https://api.openweathermap.org/data/2.5/onecall?lat=${localStorage.getItem(
+          "summerx_lat"
+        )}&lon=${localStorage.getItem(
+          "summerx_long"
+        )}&exclude=hourly,daily,minutely&appid=${
+          process.env.NEXT_PUBLIC_apiKey
+        }`
+      )
+      .then((r) => {
+        if (r.data.alerts) {
+          setWAlert(r.data.alerts[0]);
+        } else {
+          setWAlert(null);
+        }
+      });
+  }, []);
+  function showAlerts() {
+    if (walert !== null) {
+      setIsWAlertVisible(true);
+    } else {
+      alert("No Alerts for your area! Enjoy your Day.");
+    }
+  }
   return (
     <div className="w-full flex flex-row flex-wrap pt-16 sm:px-4 justify-center">
-      <Widget icon={Bell} label="Alerts" />
+      <Widget icon={Bell} label="Alerts" onClick={showAlerts} />
       <Widget icon={Water} label="Water Reminder" />
       <Widget icon={Tree} label="Plant a Tree" />
       <Widget icon={Music} label="Music" />
@@ -33,6 +63,16 @@ export default function Widgets() {
         label="Restaurants"
         onClick={() => find("Restaurants")}
       />
+      {isWAlertVisible && (
+        <AlertBox
+          onClose={() => {
+            setIsWAlertVisible(false);
+          }}
+          topic={walert.event}
+          sender={walert.sender_name}
+          desc={walert.description}
+        />
+      )}
     </div>
   );
 }

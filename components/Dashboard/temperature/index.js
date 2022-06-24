@@ -56,14 +56,14 @@ export default function Temperature() {
           className="flex justify-center items-center font-semibold text-sm sm:text-xl md:text-xl lg:text-base xl:text-xl"
           title="Minimum Temperature"
         >
-          <TrendingUpIcon className="w-5 sm:w-7 xl:w-8 mr-2 stroke-[1.6]" />{" "}
+          <TrendingUpIcon className="w-5 sm:w-7 xl:w-8 mr-2 stroke-[1.6]" />
           {tmax}°C
         </p>
         <p
           className="flex justify-center items-center font-semibold text-sm sm:text-xl md:text-xl lg:text-base xl:text-xl"
           title="Maximum Temperature"
         >
-          <TrendingDownIcon className="w-5 sm:w-7 xl:w-8 mr-2 stroke-[1.6]" />{" "}
+          <TrendingDownIcon className="w-5 sm:w-7 xl:w-8 mr-2 stroke-[1.6]" />
           {tmin}°C
         </p>
       </div>
