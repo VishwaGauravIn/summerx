@@ -29,7 +29,9 @@ export default function Temperature() {
             setHumidity(parseInt(base.humidity));
             setTmax(parseInt(base.temp_max));
             setTmin(parseInt(base.temp_min));
-            setWcode(parseInt(res.data.list[0].weather[0].icon));
+            setWcode(
+              res.data.list[0].weather[0].icon.replace("n", "").replace("d", "")
+            );
           });
       });
     } else {
