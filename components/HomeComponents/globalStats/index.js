@@ -4,9 +4,9 @@ import { ChartBarIcon, TrendingDownIcon, UserGroupIcon, UserRemoveIcon } from '@
 export default function GlobalStats() {
   return (
     <>
-      <div className="text-center text-xl lg:text-3xl xl:text-4xl mt-12 lg:mt-24 xl:mt-36 font-semibold">
+      <div className="text-center text-xl lg:text-3xl xl:text-4xl mt-16 font-semibold">
         What&apos;s happening around globe due to Summer (per year)
-        <div className="flex flex-col md:flex-row justify-center items-center md:items-stretch w-[90%] mt-8 mx-auto flex-wrap  lg:mt-20">
+        <div className="flex flex-col md:flex-row justify-center items-center md:items-stretch w-[90%] mt-8 mx-auto flex-wrap  lg:mt-10">
           <Box>
             <UserRemoveIcon className="w-[70%] mx-auto stroke-[1.6]" />
             166K+ lost their lives
