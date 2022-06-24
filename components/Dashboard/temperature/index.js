@@ -68,12 +68,14 @@ export default function Temperature() {
         <img
           src={`https://openweathermap.org/img/wn/${wcode}d@4x.png`}
           alt=""
-          className="w-28 dark:hidden"
+          className="w-28 dark:hidden pointer-events-none select-none"
+          draggable={false}
         />
         <img
           src={`https://openweathermap.org/img/wn/${wcode}n@4x.png`}
           alt=""
-          className="w-28 hidden dark:block"
+          className="w-28 hidden dark:block pointer-events-none select-none"
+          draggable={false}
         />
       </div>
     </div>
