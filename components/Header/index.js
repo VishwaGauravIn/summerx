@@ -23,11 +23,13 @@ export default function Header() {
   }
   return (
     <div className="flex flex-row flex-wrap relative items-center">
-      <p className="text-3xl font-semibold first-letter:border-dashed">
+      <img src="/logo_dark.png" alt="" className="w-12 dark:hidden"/>
+      <img src="/logo.png" alt="" className="w-12 hidden dark:block"/>
+      <p className="text-3xl font-semibold">
         SummerX
       </p>
       <button
-        className="absolute right-0 active:scale-75 transition-transform ease-in-out"
+        className="absolute right-0 active:scale-75 transition-transform ease-in-out outline-none"
         onClick={changeTheme}
       >
         {isDarkMode ? (
