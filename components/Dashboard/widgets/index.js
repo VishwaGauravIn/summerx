@@ -10,7 +10,7 @@ import Widget from "./Widget";
 
 export default function Widgets() {
   return (
-    <div className="w-full flex flex-row flex-wrap pt-16 px-4 justify-center">
+    <div className="w-full flex flex-row flex-wrap pt-16 sm:px-4 justify-center">
       <Widget icon={Music} label="Music" />
       <Widget icon={Fire} label="Heat Waves" />
       <Widget icon={Info} label="Info" />

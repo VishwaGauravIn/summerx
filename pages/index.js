@@ -26,7 +26,7 @@ export default function Home() {
         <meta name="description" content="SummerX Website" />
         <link rel="icon" href="/logo.png" />
       </Head>
-      <main className="p-6 text-primary dark:text-secondary transition-all ease-in-out">
+      <main className="p-4 sm:p-6 text-primary dark:text-secondary transition-all ease-in-out">
         {isContentVisible ? (
           <>
             <Header />

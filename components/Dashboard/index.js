@@ -13,7 +13,7 @@ export default function Dashboard() {
           <Temperature />
           <Widgets />
         </div>
-        <div className="flex flex-wrap justify-center items-center md:8/12 lg:w-5/12">
+        <div className="flex flex-wrap justify-center items-center md:8/12 lg:w-5/12 scale-100 lg:scale-110 xl:scale-100">
           <img
             src="/pic3.svg"
             alt=""
