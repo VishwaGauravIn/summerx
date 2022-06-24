@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { MoonIcon, SunIcon } from "@heroicons/react/outline";
+import Link from "next/link";
 
 export default function Header() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -23,9 +24,23 @@ export default function Header() {
   }
   return (
     <div className="flex flex-row flex-wrap relative items-center">
-      <img src="/logo_dark.png" alt="" className="w-12 dark:hidden" />
-      <img src="/logo.png" alt="" className="w-12 hidden dark:block" />
-      <p className="text-3xl font-semibold">SummerX</p>
+      <Link href="/home">
+        <div className="flex items-center group cursor-pointer">
+          <img
+            src="/logo_dark.png"
+            alt=""
+            className="w-12 dark:hidden group-item group-hover:animate-pulse pointer-events-auto select-none"
+            draggable={false}
+          />
+          <img
+            src="/logo.png"
+            alt=""
+            className="w-12 hidden dark:block group-item group-hover:animate-pulse pointer-events-auto select-none"
+            draggable={false}
+          />
+          <p className="text-3xl font-semibold">SummerX</p>
+        </div>
+      </Link>
       <button
         className="absolute right-0 active:scale-75 transition-transform ease-in-out outline-none"
         onClick={changeTheme}
