@@ -12,8 +12,9 @@
 - [framer-motion](https://greensock.com/gsap/)
 - [axios](https://www.npmjs.com/package/axios)
 - [@heroicons/react](https://heroicons.com/)
-- [TailWindCSS](https://tailwindcss.com/)
+- [TailwindCSS](https://tailwindcss.com/)
 - [react-text-transition](https://www.npmjs.com/package/react-text-transition)
+- [react-click-away-listener](https://www.npmjs.com/package/react-click-away-listener)
 
 [![](https://visitcount.itsvg.in/api?id=freyhacks&label=Repo%20Views&color=0&icon=5&pretty=true)](https://visitcount.itsvg.in)
 
