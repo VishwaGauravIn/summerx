@@ -10,11 +10,11 @@ export default function Features() {
           Here is Best and Simple Solution
         </p>
         <div className="flex justify-center flex-wrap w-9/12 sm:w-10/12 md:w-8/12 self-center py-2 sm:py-4 md:py-6 lg:py-8">
-          {feature("Heat wave warning")}
-          {feature("Reminder")}
+          {feature("Weather Warning")}
+          {feature("Drinks Reminder")}
           {feature("Medical Support")}
           {feature("Weather Report")}
-          {feature("Music")}
+          {feature("Music based on weather")}
           {feature("Plant a Tree")}
           {feature("Explore Nearby")}
           {feature("Community Support")}
