@@ -35,7 +35,7 @@ export default function Hero() {
   }
   return (
     <div className="flex flex-col md:flex-row mt-8 lg:mt-12 xl:mt-24 justify-center dark:text-zinc-200 text-primary">
-      <div className="basis-6/12 flex flex-col gap-4 lg:gap-3 xl:gap-8 sm:pl-3 lg:pl-6 py-8 sm:py-10 md:py-12">
+      <div className="basis-6/12 flex flex-col gap-4 lg:gap-3 xl:gap-8 sm:pl-3 lg:pl-6 py-8 sm:py-10">
         <div>
           <p className="text-2xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-4xl font-normal opacity-70 mb-1 sm:mb-2 md:mb-3 lg:mb-4 xl:mb-5 2xl:mb-6">
             We are on a Mission
@@ -53,10 +53,8 @@ export default function Hero() {
               texts={["Summer", "Excssive Heat", "Dehydration", "Illness"]}
             />
           </div> */}
-          <p className="mb-6 sm:w-11/12 md:w-10/12 xl:text-xl">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum porro
-            non obcaecati ducimus voluptas odit eveniet eos perferendis rerum
-            excepturi.
+          <p className="mb-6 md:-mt-2 sm:w-11/12 md:w-10/12 xl:text-xl">
+            of people who suffer from weather changes such as heat waves, excessive heat, global warming, and more by providing realtime alerts, location based nearby services, useful reminders, and more that will help them to tackle this issue.
           </p>
           <form action="" onSubmit={checkUsername} className="flex flex-col">
             <input
