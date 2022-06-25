@@ -47,7 +47,13 @@ export default function Widgets() {
   return (
     <div className="w-full flex flex-row flex-wrap pt-16 sm:px-4 justify-center">
       <Widget icon={Bell} label="Alerts" onClick={showAlerts} />
-      <Widget icon={Water} label="Water Reminder" />
+      <Widget
+        icon={Water}
+        label="Water Reminder"
+        onClick={() => {
+          alert("Development in progress");
+        }}
+      />
       <Widget
         icon={Tree}
         label="Plant a Tree"
