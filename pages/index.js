@@ -32,7 +32,7 @@ export default function Home() {
 
         <meta
           name="description"
-          content="We are on a mission to save lives of people who suffer due to heat waves, excessive heat, illness and more."
+          content="We are on a mission to save lives of people who suffer from heat waves, excessive heat, illness and more."
         />
 
         <meta name="copyright" content="VishwaGauravIn" />
@@ -45,7 +45,7 @@ export default function Home() {
 
         <meta
           property="og:description"
-          content="We are on a mission to save lives of people who suffer due to heat waves, excessive heat, illness and more."
+          content="We are on a mission to save lives of people who suffer from heat waves, excessive heat, illness and more."
         />
 
         <meta
@@ -61,7 +61,7 @@ export default function Home() {
 
         <meta
           property="twitter:description"
-          content="We are on a mission to save lives of people who suffer due to heat waves, excessive heat, illness and more."
+          content="We are on a mission to save lives of people who suffer from heat waves, excessive heat, illness and more."
         />
 
         <meta
