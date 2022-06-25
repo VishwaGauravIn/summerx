@@ -25,7 +25,7 @@ export default function Tips() {
 }
 
 export const tipsList = [
-  "Drink at least 2-3 L everyday",
+  "Drink at least 2-3 L water everyday",
   "Wear light and loose fit clothes",
   "Avoid eating oily foods",
   "Use box fans and ceiling fans to promote air circulation throughout your home",
