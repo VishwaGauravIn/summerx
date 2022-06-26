@@ -11,7 +11,7 @@ export default function OpenSource() {
         <p className="text-3xl sm:text-4xl md:text-5xl font-medium">
           We&apos;re Open Source
         </p>
-        <p className="text-gray-500 md:pr-10 my-6 md:text-lg 2xl:text-xl">
+        <p className="text-primary dark:text-secondary opacity-75 md:pr-10 my-6 md:text-lg 2xl:text-xl">
           Yes you heard right, this website is open source and you can find code
           of this website on GitHub. You can request a feature, contribute to
           project by adding feedbacks and mentioning bugs if they exist.

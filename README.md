@@ -1,13 +1,46 @@
 ## 🚧 Under Development
 ----
-## Screenshots
-![image](https://user-images.githubusercontent.com/81325730/175696177-a2f4505d-da00-46b8-a666-b01bbbbe81b9.png)
-![image](https://user-images.githubusercontent.com/81325730/175696207-ef284509-d383-4c2a-89f2-6f8a3540150a.png)
-![image](https://user-images.githubusercontent.com/81325730/175696240-a3ac9a98-5e91-43c4-be3a-40505e985ada.png)
-![image](https://user-images.githubusercontent.com/81325730/175696273-39089554-2271-42a5-ba52-29f2c2de8c23.png)
+# SummerX
 
+## 💡 Inspiration
+We are on a Mission to Save Lives of people who suffer from weather changes such as heat waves, excessive heat, global warming, and more by providing real-time alerts, location-based nearby services, valuable reminders, and more that will help them tackle this issue.
 
-## Libraries being used
+Here is what's happening around the globe due to Summer:
+- 166K+ lost their lives
+- 3.6mm/year increase in sea level
+- 175M+ people affected
+- 5% fall in GDP
+
+## ❓ What it does
+We try to provide the minimal yet best solution, features such as:
+- Weather Warning
+- Drinks Reminder
+- Medical Support
+- Weather Report
+- Music based on weather
+- Plant a Tree
+- Explore Nearby
+- Community Support
+
+## 🔨 How we built it
+#### We have used:  
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+![Framer](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue)
+
+- For data, We have used [OpenWeatherMapAPI](https://openweathermap.org/api)  
+- For Nearby Places feature, We have used [Google Maps](https://maps.google.com/)  
+- and for Music, We have used [Spotify](https://spotify.com/)
+- Plant a Tree feature is powered by [#teamtrees](https://teamtrees.org/)
+- Website is hosted on Vercel and the parent domain is registered from GoDaddy
+
+Libraries used:
 - [gsap](https://greensock.com/gsap/)
 - [framer-motion](https://greensock.com/gsap/)
 - [axios](https://www.npmjs.com/package/axios)
@@ -15,6 +48,13 @@
 - [TailwindCSS](https://tailwindcss.com/)
 - [react-text-transition](https://www.npmjs.com/package/react-text-transition)
 - [react-click-away-listener](https://www.npmjs.com/package/react-click-away-listener)
+
+## Screenshots
+![image](https://user-images.githubusercontent.com/81325730/175696177-a2f4505d-da00-46b8-a666-b01bbbbe81b9.png)
+![image](https://user-images.githubusercontent.com/81325730/175696207-ef284509-d383-4c2a-89f2-6f8a3540150a.png)
+![screencapture-localhost-3000-home-2022-06-25-17_35_22](https://user-images.githubusercontent.com/81325730/175773407-bc8e95ef-c457-4730-8f59-fe1b35389497.png)
+![image](https://user-images.githubusercontent.com/81325730/175773415-23d41f16-81e1-4d11-898c-4b5ba753ee8c.png)
+
 
 [![](https://visitcount.itsvg.in/api?id=freyhacks&label=Repo%20Views&color=0&icon=5&pretty=true)](https://visitcount.itsvg.in)
 
