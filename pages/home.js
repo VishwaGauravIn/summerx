@@ -20,7 +20,7 @@ export default function Home() {
 
         <meta property="og:type" content="website" />
 
-        <meta property="og:url" content="summerx.vercel.app" />
+        <meta property="og:url" content="summerx.itsvg.in" />
 
         <meta property="og:title" content="SummerX" />
 
@@ -31,12 +31,12 @@ export default function Home() {
 
         <meta
           property="og:image"
-          content="https://summerx.vercel.app/webimg.png"
+          content="https://summerx.itsvg.in/webimg.png"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
 
-        <meta property="twitter:url" content="summerx.vercel.app" />
+        <meta property="twitter:url" content="summerx.itsvg.in" />
 
         <meta property="twitter:title" content="SummerX" />
 
@@ -47,7 +47,7 @@ export default function Home() {
 
         <meta
           property="twitter:image"
-          content="https://summerx.vercel.app/webimg.png"
+          content="https://summerx.itsvg.in/webimg.png"
         />
         <link rel="icon" href="/logo.png" />
         {/* Google Analytics */}
