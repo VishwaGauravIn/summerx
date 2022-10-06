@@ -12,7 +12,7 @@ export default function Footer() {
         {"</>"} & Crafted with&nbsp;
         <span className="hidden dark:block">💛</span>
         <span className="dark:hidden">🖤</span>
-        &nbsp;
+        &nbsp;by Vishwa Gaurav
       </a>
     </div>
   );
