@@ -65,10 +65,10 @@ export default function Hero() {
               onChange={(e) => setUsername(e.target.value)}
               placeholder="Your full name"
               autoFocus={true}
-              className="w-full sm:w-10/12 h-16 lg:h-20 rounded-lg bg-primary dark:bg-secondary ring-8 ring-primary/20 dark:ring-secondary/20 text-secondary dark:text-primary outline-none p-4 text-xl md:text-2xl lg:text-3xl font-semibold tracking-wider"
+              className="w-full sm:w-10/12 h-16 lg:h-20 rounded-lg bg-primary focus:ring-primary/30 dark:bg-secondary ring-8 ring-primary/20 dark:ring-secondary/20 dark:focus:ring-secondary/30 text-secondary dark:text-primary outline-none p-4 text-xl md:text-2xl lg:text-3xl font-semibold tracking-wider transition-all ease-in-out"
             />
             <button
-              className="bg-primary dark:bg-secondary hover:ring-primary/30 ring-8 ring-primary/20 dark:ring-secondary/20 text-secondary dark:text-primary outline-none p-4 text-base md:text-xl lg:text-2xl w-max px-8 my-8 rounded-full transition-all ease-in-out active:scale-95 self-center sm:self-start"
+              className="bg-primary dark:bg-secondary hover:ring-primary/30 ring-8 ring-primary/20 dark:ring-secondary/20 dark:hover:ring-secondary/30 text-secondary dark:text-primary outline-none p-4 text-base md:text-xl lg:text-2xl w-max px-8 my-8 rounded-full transition-all ease-in-out active:scale-95 self-center sm:self-start"
               type="submit"
             >
               Get Started
